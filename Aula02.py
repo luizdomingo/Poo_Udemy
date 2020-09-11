@@ -18,8 +18,8 @@ class Pessoa:
 
     @staticmethod
     def gerar_id():                     # no metodo static nos não usamos a palavra self nem a palavra cls
-        aleatorio = randint(250, 500)   # passa a ser uma fucçao normal, para usarmos o @staticmetod 
-        return aleatorio                # precisamos atribuila a uma istancia
+        aleatorio = randint(250, 500)   # passa a ser uma funçao normal, para usarmos o @staticmetod 
+        return aleatorio                # precisamos atribuila a uma instancia
 
 
 p1 = Pessoa('luiz', 32)

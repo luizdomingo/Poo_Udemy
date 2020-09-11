@@ -1,7 +1,9 @@
-from Aula01 import Pessoa, Pessoa_1
+from Aula01 import Pessoa
 from Agregacao_composicao import CarrinhoDeCompras, Produtos
-# p1 = Pessoa() # aqui estamos Atribuindo o objeto pessoa a uma variavél
-# p1.falar()    # aqui estamos passando o metodo a variavél
+from pendulum import parse  # modulo usado para manipulação de datas
+
+# p1 = Pessoa()  # aqui estamos Atribuindo o objeto pessoa a uma variavél
+# p1.falar()  # aqui estamos passando o metodo a variavél
 
 # p3 = Pessoa_1('luiz',32)
 # p3.comer('Xoxota')

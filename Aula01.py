@@ -1,19 +1,21 @@
 from datetime import datetime
 
-class Pessoa():
+
+class Pessoa:
     def falar(self):
         print('Luiz está Falando')
 
+
 # criando uma classe usando o metodo especial do python
-class Pessoa_1():
+class Pessoa1:
     ano_nascimento = int(datetime.strftime(datetime.now(), '%Y'))
-    #ano_nascimento = 2020
+
+    # ano_nascimento = 2020
     def __init__(self, nome, idade, comendo=False, falando=False):
         self.nome = nome
         self.idade = idade
         self.comendo = comendo
         self.falando = falando
-
 
     def falando_1(self, assunto):
         if self.comendo:
@@ -22,17 +24,15 @@ class Pessoa_1():
         if self.falando:
             print(f'{self.nome} Já está falando')
             return
-        print(f'{self.nome} Está falando {assunto}')    
-        self.falando =True
-        
+        print(f'{self.nome} Está falando {assunto}')
+        self.falando = True
 
     def comer(self, alimento):
         if self.comendo:
             print(f'{self.nome}, ja esta comendo')
             return
         print(f'{self.nome} Está comendo {alimento}')
-        self.comendo = True 
-
+        self.comendo = True
 
     def parar_de_comer(self):
         if not self.comendo:
@@ -40,8 +40,6 @@ class Pessoa_1():
             return
         print(f'{self.nome} Parou de comer')
         self.comendo = False
-    
 
     def get_idade(self):
         print(f'O ano de nascimento de {self.nome} é {self.ano_nascimento - self.idade}')
-        
