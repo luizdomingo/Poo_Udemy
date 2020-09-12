@@ -1,3 +1,20 @@
 # Continuando sobre relações entre class em python, Vamos estudar sobre herança
+# Uma classe chamada pessoa ela pode ter varias filhas, sendo a mesma a classe principal
+# também chamada de super class, e suas filhas a qual faz as relações é chamada de sub-class.
 
+class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+        self.nomeclasse = self.__class__.__name__
 
+    def falar(self):
+        print(f'{self.nomeclasse} está falando')
+
+class Aluno(Pessoa):
+    def estudar(self):
+        print(f'{self.nomeclasse} está Focado nos estudos..')
+
+class Funcionario(Pessoa):
+    def trabalhar(self):
+        print(f'{self.nomeclasse} está Trabalhando..')
