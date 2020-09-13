@@ -11,9 +11,11 @@ class Pessoa:
     def falar(self):
         print(f'{self.nomeclasse} está falando')
 
+
 class Aluno(Pessoa):
     def estudar(self):
         print(f'{self.nomeclasse} está Focado nos estudos..')
+
 
 class Funcionario(Pessoa):
     def trabalhar(self):
